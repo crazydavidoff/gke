@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: submodule-pod
+  namespace: d003
+spec:
+  containers:
+  - name: busybox
+    image: busybox:1.28
+    args:
+    - sleep
+    - "1000000"
